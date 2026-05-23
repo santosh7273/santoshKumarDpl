@@ -754,7 +754,7 @@ function Contact() {
     if (!form.name || !form.email || !form.message) { showToast("Please fill all fields.", "error"); return; }
     setLoading(true);
     try {
-      const r = await fetch("http://localhost:5000/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
+      const r = await fetch("https://poba.onrender.com/submit_form", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
       if (r.ok) { showToast("Message sent successfully!", "success"); setForm({ name: "", email: "", message: "" }); }
       else showToast("Something went wrong. Please try again.", "error");
     } catch { showToast("Server offline — email me directly.", "warn"); }
