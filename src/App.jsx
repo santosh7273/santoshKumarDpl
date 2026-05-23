@@ -65,16 +65,16 @@ const education = [
 const skillCategories = [
   { title: "Frontend", skills: ["React.js", "Angular", "TypeScript", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"] },
   { title: "Backend & APIs", skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth", "RBAC", "SSO"] },
-  { title: "Databases", skills: ["MongoDB", "MySQL", "Schema Design", "Aggregation"] },
+  { title: "Databases", skills: ["MongoDB", "MySQL", "Schema Design",] },
   { title: "AI & ML", skills: ["TensorFlow", "EfficientNetB0", "CNN", "Gemini API", "Flask"] },
-  { title: "Languages", skills: ["Java", "Python", "C++"] },
+  { title: "Languages", skills: ["C","C++","Python","Java","SQL"] },
   { title: "DevOps & Tools", skills: ["Git", "GitHub", "Vercel", "Render", "VS Code"] },
 ];
 
 const achievements = [
-  { num: "01", title: "Winner — WorthyHack Hackathon", org: "Cacheho", desc: "First place among competitive teams — delivering an AI-powered solution under a 24-hour deadline." },
-  { num: "02", title: "Top 6 / 120+ Teams", org: "Infosys Hackathon", desc: "Ranked in the top 5% of participants, presenting a scalable enterprise solution to senior leadership." },
-  { num: "03", title: "450+ Problems · Rating 1574", org: "LeetCode", desc: "Consistent algorithmic problem-solver with expertise in DP, graphs, and system design." },
+  { num: "01", title: "Top 6 / 120+ Teams", org: "Infosys Hackathon", desc: "Ranked Top 6 / 120+ participants in Infosys Hackathon focused on UI-to-code conversion and debugging challenges." },
+  { num: "02", title: "Winner — WorthyHack Hackathon", org: "Cacheho", desc: "Winner of WorthyHack Hackathon conducted by Cacheho for an innovative full-stack solution." },
+  { num: "03", title: "450+ Problems · Rating 1574", org: "LeetCode", desc: "Demonstrated strong problem-solving skills by completing over 450+ coding challenges on LeetCode." },
   { num: "04", title: "2-Star · Rating 1482", org: "CodeChef", desc: "Recognized competitive programmer with strong performance in time-constrained contests." },
 ];
 
@@ -93,8 +93,7 @@ const stats = [
   { count: 2, suffix: "", label: "Hackathon Wins" },
 ];
 
-const phrases = ["Full Stack Developer", "MERN Stack Engineer", "Angular Developer", "AI Systems Builder", "Problem Solver"];
-
+const phrases = ["Full Stack Developer", "MERN Stack Engineer", "MEAN Stack Engineer", "Competitive Programmer", "Problem Solver", "Tech Enthusiast", "AI Explorer"];
 const navLinks = ["Home", "About", "Education", "Skills", "Projects", "Internship", "Achievements", "Contact"];
 
 // ─── SVG ICONS ───────────────────────────────────────────────────────────────
@@ -503,11 +502,11 @@ function CodeWindow() {
       <div className="code-body">
         <div><span className="kw">const</span> <span className="fn">developer</span> = {"{"}</div>
         <div>&nbsp;&nbsp;<span className="prop">name</span>: <span className="str">"T. Santosh Kumar"</span>,</div>
-        <div>&nbsp;&nbsp;<span className="prop">role</span>: <span className="str">"Full Stack Engineer"</span>,</div>
-        <div>&nbsp;&nbsp;<span className="prop">stack</span>: [<span className="str">"MERN"</span>, <span className="str">"Angular"</span>],</div>
-        <div>&nbsp;&nbsp;<span className="prop">ai</span>: [<span className="str">"TensorFlow"</span>, <span className="str">"Gemini"</span>],</div>
+        <div>&nbsp;&nbsp;<span className="prop">role</span>: <span className="str">"Full Stack Developer"</span>,</div>
+        <div>&nbsp;&nbsp;<span className="prop">stack</span>: [<span className="str">"MERN"</span>, <span className="str">"MEAN"</span>],</div>
+        <div>&nbsp;&nbsp;<span className="prop">Ai</span>: [<span className="str">"TensorFlow"</span>, <span className="str">"Gemini AI"</span>],</div>
         <div>&nbsp;&nbsp;<span className="prop">cgpa</span>: <span className="num">8.9</span>,</div>
-        <div>&nbsp;&nbsp;<span className="prop">leetcode</span>: <span className="num">450</span><span className="acc">+</span>,</div>
+        <div>&nbsp;&nbsp;<span className="prop">leetcode</span>: <span className="num">450</span><span className="acc">+ problems solved</span>,</div> 
         <div>&nbsp;&nbsp;<span className="prop">status</span>: <span className="acc">"available"</span>,</div>
         <div>{"}"}</div>
         <div style={{marginTop:"0.6rem"}}><span className="cm">// Infosys MEAN Stack Intern — Dec 2025</span></div>
@@ -547,7 +546,7 @@ function Hero({ typed }) {
           <div className="hero-actions">
             <a href="#projects" className="btn-primary">⚡ View Projects</a>
             <a href="#contact" className="btn-ghost">Get In Touch</a>
-            <a href="/resume.pdf" download className="btn-ghost">↓ Resume</a>
+            <a href="./public/skResume.pdf" download className="btn-ghost">↓ Resume</a>
           </div>
           <div className="hero-socials">
             <a href="https://github.com/santosh7273" target="_blank" rel="noreferrer" className="social-link" title="GitHub"><IconGithub size={19} /></a>
@@ -565,7 +564,7 @@ function Hero({ typed }) {
 function About() {
   const [ref, visible] = useInView();
   const cards = [
-    { icon:"⚡", title:"Full-Stack Craftsman", desc:"B.Tech CSE finalist at Vignan's Institute — architecting scalable full-stack systems with AI integrations, RESTful APIs, and enterprise auth flows." },
+    { icon:"⚡", title:"Full-Stack Developer", desc:"B.Tech CSE Graduate at Vignan's Institute — architecting scalable full-stack systems with AI integrations, RESTful APIs, and enterprise auth flows." },
     { icon:"🧠", title:"Problem Solver", desc:"450+ LeetCode solutions and competitive programming background — turning algorithmic thinking into production-grade code that performs under pressure." },
     { icon:"🚀", title:"AI Builder", desc:"Shipped production AI systems — CNN disease detection, Gemini-powered medical analyzers — merging deep learning with intuitive frontends for real-world impact." },
     { icon:"🏆", title:"Enterprise Experience", desc:"Infosys MEAN Stack intern — built RBAC-secured modules, SSO authentication, and dashboards serving real enterprise workflows at scale." },
@@ -676,17 +675,15 @@ function Projects() {
 function Internship() {
   const [ref, visible] = useInView();
   const points = [
-    "Engineered a real-time Intern Management Portal — full MEAN stack — serving enterprise-scale internal workflows across departments.",
-    "Architected RBAC authorization with SSO authentication, eliminating unauthorized access across all role hierarchies.",
-    "Built modular Angular dashboards and Node.js REST APIs for leave management, resignations, and project tracking.",
-    "Designed MongoDB schemas with complex aggregation pipelines — optimizing query performance for high-frequency operations.",
-    "Collaborated in agile enterprise workflows, adopting modular architecture patterns for long-term maintainability.",
+    "Contributed to development of an internal intern workflow management system using the MEAN stack, focusing on modules such as leave requests, resignation managment, project progress tracking, daily Updates and profile management.",
+    "Worked on both frontend (Angular) and backend (Node.js + Express.js) for building REST APIs and interactive dashboards for intern activity tracking.",
+    "Been a part of implementing role-based access control (RBAC), SSO(Single Sign On)-based authentication, and MongoDB schema design for structured and secure data handling",
   ];
   return (
     <section id="internship" className="sec-wrap">
       <div className={`header-block reveal ${visible ? "visible" : ""}`} ref={ref}>
         <span className="sec-eyebrow">05 — Experience</span>
-        <h2 className="sec-title">Enterprise Experience</h2>
+        <h2 className="sec-title">Internship Experience</h2>
       </div>
       <div className={`intern-card reveal reveal-delay-1 ${visible ? "visible" : ""}`}>
         <div className="intern-header">
@@ -694,7 +691,7 @@ function Internship() {
           <div>
             <div className="intern-role">MEAN Stack Developer Intern</div>
             <div className="intern-company">Infosys</div>
-            <div className="intern-meta">Dec 2025 – May 2026 &nbsp;·&nbsp; Remote</div>
+            <div className="intern-meta">Dec 2025 – May 2026 &nbsp;·&nbsp; Mysore, Karnataka, India</div>
           </div>
         </div>
         <div className="intern-points">
@@ -752,7 +749,7 @@ function Contact() {
     if (!form.name || !form.email || !form.message) { showToast("Please fill all fields.", "error"); return; }
     setLoading(true);
     try {
-      const r = await fetch("http://localhost:3000/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
+      const r = await fetch("http://localhost:5000/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
       if (r.ok) { showToast("Message sent successfully!", "success"); setForm({ name: "", email: "", message: "" }); }
       else showToast("Something went wrong. Please try again.", "error");
     } catch { showToast("Server offline — email me directly.", "warn"); }
@@ -774,7 +771,7 @@ function Contact() {
             <p className="contact-info-desc">Whether you're building something ambitious or exploring a partnership — let's create something remarkable together.</p>
             <div className="contact-detail">
               <div className="contact-detail-icon"><IconMail size={19} /></div>
-              <div><div className="contact-detail-label">Email</div><div className="contact-detail-value">tsantoshkumar73@gmail.com</div></div>
+              <div><div className="contact-detail-label">Email</div><div className="contact-detail-value">ktsantosh5@gmail.com</div></div>
             </div>
             <div className="contact-detail">
               <div className="contact-detail-icon"><IconPin size={19} /></div>
@@ -790,11 +787,11 @@ function Contact() {
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label className="form-label">Your Name</label>
-                  <input className="form-input" type="text" placeholder="John Doe" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} required />
+                  <input className="form-input" type="text" placeholder="Enter your name" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} required />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Email Address</label>
-                  <input className="form-input" type="email" placeholder="john@example.com" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} required />
+                  <input className="form-input" type="email" placeholder="Enter your email" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} required />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Message</label>
@@ -877,7 +874,7 @@ export default function App() {
 
       <footer>
         <div className="footer-logo">T. Santosh Kumar</div>
-        <p className="footer-copy">© 2026 · All rights reserved</p>
+        <p className="footer-copy">© 2026 · Full Stack Developer</p>
       </footer>
     </>
   );
