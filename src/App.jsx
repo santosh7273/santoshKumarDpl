@@ -551,7 +551,7 @@ function Hero({ typed }) {
           <div className="hero-actions">
             <a href="#projects" className="btn-primary">⚡ View Projects</a>
             <a href="#contact" className="btn-ghost">Get In Touch</a>
-            <a href="./public/santoshKumarFinalResume.pdf" download className="btn-ghost">↓ Resume</a>
+            <a href="/santoshKumarFinalResume.pdf" download className="btn-ghost">↓ Resume</a>
           </div>
           <div className="hero-socials">
             <a href="https://github.com/santosh7273" target="_blank" rel="noreferrer" className="social-link" title="GitHub"><IconGithub size={19} /></a>
