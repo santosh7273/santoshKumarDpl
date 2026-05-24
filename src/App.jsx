@@ -525,8 +525,8 @@ function CodeWindow() {
         <div><span className="kw">const</span> <span className="fn">developer</span> = {"{"}</div>
         <div>&nbsp;&nbsp;<span className="prop">name</span>: <span className="str">"T. Santosh Kumar"</span>,</div>
         <div>&nbsp;&nbsp;<span className="prop">role</span>: <span className="str">"Full Stack Developer"</span>,</div>
-        <div>&nbsp;&nbsp;<span className="prop">stack</span>: [<span className="str">"MERN"</span>, <span className="str">"MEAN"</span>],</div>
-        <div>&nbsp;&nbsp;<span className="prop">Ai</span>: [<span className="str">"TensorFlow"</span>, <span className="str">"Gemini AI"</span>],</div>
+        <div>&nbsp;&nbsp;<span className="prop">stack</span>: [<span className="str">"MEAN"</span>, <span className="str">"MERN"</span>],</div>
+        <div>&nbsp;&nbsp;<span className="prop">Ai</span>: [<span className="str">"TensorFlow"</span>, <span className="str">"Gemini API"</span>],</div>
         <div>&nbsp;&nbsp;<span className="prop">cgpa</span>: <span className="num">8.9</span>,</div>
         <div>&nbsp;&nbsp;<span className="prop">leetcode</span>: <span className="num">450</span><span className="acc">+ problems solved</span>,</div> 
         <div>&nbsp;&nbsp;<span className="prop">status</span>: <span className="acc">"available"</span>,</div>
