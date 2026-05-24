@@ -519,7 +519,7 @@ function CodeWindow() {
     <div className="code-window">
       <div className="code-titlebar">
         <div className="dot-r" /><div className="dot-y" /><div className="dot-g" />
-        <span className="code-fname">portfolio.ts</span>
+        <span className="code-fname">portfolio.js</span>
       </div>
       <div className="code-body">
         <div><span className="kw">const</span> <span className="fn">developer</span> = {"{"}</div>
