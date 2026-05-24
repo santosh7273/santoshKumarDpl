@@ -93,7 +93,7 @@ const stats = [
   { count: 2, suffix: "", label: "Hackathon Wins" },
 ];
 
-const phrases = ["Full Stack Developer", "MERN Stack Engineer", "MEAN Stack Engineer", "Competitive Programmer", "Problem Solver", "Tech Enthusiast", "AI Explorer"];
+const phrases = ["Full Stack Developer", "MEAN Stack Engineer", "MERN Stack Engineer", "Competitive Programmer", "Problem Solver", "Tech Enthusiast", "AI Explorer"];
 const navLinks = ["Home", "About", "Education", "Skills", "Projects", "Internship", "Achievements", "Contact"];
 
 // ─── SVG ICONS ───────────────────────────────────────────────────────────────
