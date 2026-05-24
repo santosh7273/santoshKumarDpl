@@ -564,7 +564,7 @@ function Hero({ typed }) {
           <div className="hero-badge"><span className="dot" /> Available for opportunities</div>
           <h1 className="hero-name">Hi, I'm<br /><em>T. Santosh Kumar</em></h1>
           <div className="hero-typed">{typed}<span className="cursor" /></div>
-          <p className="hero-desc">Full-Stack Engineer building enterprise-grade systems, AI-powered platforms, and scalable architectures — where precision meets great design.</p>
+          <p className="hero-desc">Full-Stack Engineer building reliable systems, AI-powered platforms, and scalable architectures — where precision meets great design.</p>
           <div className="hero-actions">
             <a href="#projects" className="btn-primary">⚡ View Projects</a>
             <a href="#contact" className="btn-ghost">Get In Touch</a>
