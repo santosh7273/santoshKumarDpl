@@ -63,7 +63,7 @@ const education = [
 ];
 
 const skillCategories = [
-  { title: "Frontend", skills: ["React.js", "Angular", "TypeScript", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"] },
+  { title: "Frontend", skills: ["React.js", "Angular", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"] },
   { title: "Backend & APIs", skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth", "RBAC", "SSO"] },
   { title: "Databases", skills: ["MongoDB", "MySQL", "Schema Design",] },
   { title: "AI & ML", skills: ["TensorFlow", "EfficientNetB0", "CNN", "Gemini API", "Flask"] },
