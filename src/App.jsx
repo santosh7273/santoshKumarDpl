@@ -117,8 +117,25 @@ const IconLeetcode = ({ size = 18 }) => (
 );
 
 const IconCodechef = ({ size = 18 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M11.257.004C5.23.004.004 5.23.004 11.257c0 6.028 5.227 11.254 11.253 11.254 6.027 0 11.253-5.226 11.253-11.254C22.51 5.23 17.284.004 11.257.004zm0 1.417c5.26 0 9.836 4.577 9.836 9.836 0 5.26-4.576 9.836-9.836 9.836-5.259 0-9.836-4.576-9.836-9.836 0-5.259 4.577-9.836 9.836-9.836zM8.963 6.707l-3.26 1.964v5.17l3.26 1.965 3.26-1.965v-1.311l-1.63.983v.655l-1.63.983-1.63-.983V9.343l1.63-.983 1.63.983v.655l1.63.983V9.671L8.963 6.707zm6.074 0l-3.26 1.964v5.17l3.26 1.965 3.26-1.965v-5.17l-3.26-1.964zm0 1.636l1.63.983v3.312l-1.63.983-1.63-.983V9.326l1.63-.983z" />
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    {/* Chef Hat - puff top */}
+    <path d="M12 1.5c-1.2 0-2.2.6-2.8 1.5-.4-.2-.8-.3-1.2-.3-1.5 0-2.7 1.2-2.7 2.7 0 .5.1 1 .4 1.4C5 7.4 4.5 8.2 4.5 9c0 1.2.8 2.2 2 2.5V13h11v-1.5c1.2-.3 2-1.3 2-2.5 0-.8-.5-1.6-1.2-2.1.3-.4.4-.9.4-1.4 0-1.5-1.2-2.7-2.7-2.7-.4 0-.8.1-1.2.3C14.2 2.1 13.2 1.5 12 1.5z"/>
+    {/* Hat band */}
+    <rect x="5" y="12.5" width="14" height="1.5" rx="0.3"/>
+    {/* Face */}
+    <path d="M7 14v5.5c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V14H7z"/>
+    {/* Left < bracket */}
+    <path d="M6.5 16.5L4 18l2.5 1.5v-1.2L5.2 18l1.3-.8v-1.2z"/>
+    {/* Right > bracket */}
+    <path d="M17.5 16.5L20 18l-2.5 1.5v-1.2L18.8 18l-1.3-.8v-1.2z"/>
+    {/* Left eye */}
+    <circle cx="10" cy="16.5" r="0.8" fill="white"/>
+    {/* Right eye */}
+    <circle cx="14" cy="16.5" r="0.8" fill="white"/>
+    {/* Mustache left */}
+    <path d="M9.5 18.5c.5-.6 1.2-.5 2.5-.5" stroke="white" strokeWidth="0.7" fill="none" strokeLinecap="round"/>
+    {/* Mustache right */}
+    <path d="M12 18c1.3 0 2-.1 2.5.5" stroke="white" strokeWidth="0.7" fill="none" strokeLinecap="round"/>
   </svg>
 );
 
