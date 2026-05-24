@@ -75,7 +75,7 @@ const achievements = [
   { num: "01", title: "Top 6 / 120+ Teams", org: "Infosys Hackathon", desc: "Ranked Top 6 / 120+ participants in Infosys Hackathon focused on UI-to-code conversion and debugging challenges." },
   { num: "02", title: "Winner — WorthyHack Hackathon", org: "Cacheho", desc: "Winner of WorthyHack Hackathon conducted by Cacheho for an innovative full-stack solution." },
   { num: "03", title: "450+ Problems · Rating 1574", org: "LeetCode", desc: "Demonstrated strong problem-solving skills by completing over 450+ coding challenges on LeetCode." },
-  { num: "04", title: "2-Star · CodeChef Rating (Peak: 1482)", org: "CodeChef", desc: "Recognized competitive programmer with strong performance in time-constrained contests." },
+  { num: "04", title: "2-Star Coder · CodeChef Rating (Peak: 1482)", org: "CodeChef", desc: "Recognized competitive programmer with strong performance in time-constrained contests." },
 ];
 
 const certifications = [
